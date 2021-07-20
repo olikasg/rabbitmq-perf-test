@@ -616,7 +616,7 @@ public class Producer extends AgentBase implements Runnable, ReturnListener,
             }
             this.keys = new String[cacheSize];
             for (int i = 0; i < cacheSize; i++) {
-                this.keys[i] = UUID.randomUUID().toString();
+                this.keys[i] = "perf-test-" + String.valueOf(i+1);
             }
         }
 
